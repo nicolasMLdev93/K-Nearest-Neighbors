@@ -1,8 +1,6 @@
 import gdown
 
-# URL de Google Drive
-url = "https://drive.google.com/uc?id=1HN7BxcbCoMmzakjQwR2lK7619fD7Q_F6"
-output = "fer2013.csv"  
+url = "https://drive.google.com/uc?id=1MMuWGYqiQ4Kya_qA7aNWslGbToOsIb8C"
+output = "clean_dataset.csv"
 
-# Descargar el archivo
 gdown.download(url, output, quiet=False)
