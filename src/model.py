@@ -12,7 +12,7 @@ def train_KNeighborsClassifier(df):
     X_train = np.array([np.fromstring(pixel, dtype=int, sep=' ') for pixel in X['pixels'] ])
     neigh = KNeighborsClassifier(n_neighbors=5)
     neigh.fit(X_train, Y_train)
-    return X_train,Y_train
+    return neigh
 
 model = train_KNeighborsClassifier(df)
 
