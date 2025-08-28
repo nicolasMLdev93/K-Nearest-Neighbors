@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import random
 import pandas as pd
 import numpy as np
@@ -16,5 +19,7 @@ index:int = random.randint(0, 200)
 face = X_eval[index]
 # Convierto al arreglo en 1 fila y n columnas (tantas como pixeles tenga)
 face_2d = face.reshape(1, -1)
+# Convierto el arreglo en una matriz de 48 x 48 para armar la imágen en base a los pixeles
+imagen_2d = face.reshape(48, 48)
 
 

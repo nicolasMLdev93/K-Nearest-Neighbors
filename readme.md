@@ -34,15 +34,14 @@ venv\Scripts\activate
 pip install -r requirements.txt
 
 4- Ve a el directorio data/ y una vez allí corre el script de download_data.py, el cual descargará automáticamente 
-el dataset de google drive
+el dataset de google drive (puede tardar unos segundos debido a que el dataframe es muy pesado y cuenta con mas de 36000 rostros)
 
-5- Entrenar el modelo:
+5- Entrenar el modelo y detectar rostro:
 
-python src/model.py
+⏱️ Puede que el modelo demore unos segundos en predecir el rostro ya que obtiene forma aleatoria una fila del dataframe original !
 
-6 - Predicción de resultados:
+python src/main.py
 
-python src/eval.py
 
 🧑 Mi perfil:
 
